@@ -6,4 +6,4 @@ sudo systemctl enable httpd
 # Start HTTPD
 sudo systemctl start httpd
 
-echo
+echo "Complete init1 commands successfully"
