@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# delete index.html
+sudo rm /var/html/index.html
+
 # Creating index.html for Server Information
 sudo echo "<html><body><p>Welcome to Web Server IP: $(ip addr show | awk '/inet / {print $2}' | cut -d'/' -f1), Name: $(hostname)</p></body></html>" | sudo tee /var/www/html/index.html
 
