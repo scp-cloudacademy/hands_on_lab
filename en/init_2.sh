@@ -9,4 +9,8 @@ sudo echo "<html><body><p style="font-size:30px">Welcome to Web Server $(hostnam
 # Start HTTPD
 sudo systemctl restart httpd
 
-echo "Complete init1 commands successfully"
+# Install Stress
+sudo yum -y install epel-release
+sudo yum -y install stress
+
+echo "Complete init2 commands successfully"
